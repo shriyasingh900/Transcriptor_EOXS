@@ -1,0 +1,142 @@
+/* Base Layout */
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header and Logo */
+header {
+  background-color: #ffffff;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.logo-header {
+  height: 60px;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Container Layout */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* Upload Card */
+.upload-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* File Selection Message */
+.file-selected-msg {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #2563eb;
+}
+
+/* Buttons */
+button {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 10px 22px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Status Message */
+#status {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #10b981;
+}
+
+/* Transcript Output Box */
+.transcript-box {
+  text-align: left;
+  background-color: #f9fafb;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  font-family: 'Courier New', monospace;
+  color: #111111;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Prevent overflow from long text */
+.transcript-box pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+/* Transcript Header (with Copy Icon) */
+.transcript-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #4b5563;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.copy-btn:hover {
+  color: #000;
+}
